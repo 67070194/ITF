@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Melody's Phone Book</title>
+    <link rel="stylesheet" href="templates/14.css">
+</head>
+<body>
+    <section class="phone-book">
+        <div class="profile">
+            <div class="username">
+                <strong href="https://github.com/67070194" class="user-link" id="username">Athikarn Chinjirattikan 67070194</strong>
+            </div>
+            <div class="avatar-container">
+                <div class="avatar" style="background-image: url('https://i.ytimg.com/vi/Q6Nsvrnnug8/maxresdefault.jpg');"></div>
+                <div class="notification">1</div>
+            </div>
+            <div class="input-group">
+                <div class="label">Set The Username</div>
+                <input type="text" id="username-input" placeholder="Enter Username">
+                <button onclick="updateUsername()">Set</button>
+            </div>
+            <div class="input-group">
+                <div class="label">Set The Profile image URL</div>
+                <input type="text" id="image-url" placeholder="Enter Image URL">
+                <button onclick="updateAvatar()">Set</button>
+            </div>
+        </div>
+
+        <div class="phone-list">
+            <h2>Phone Number List</h2>
+            <div class="input-group">
+                <input type="text" id="contact-name" placeholder="Name">
+                <input type="tel" id="contact-tel" placeholder="Tel">
+                <button onclick="addContact()">Add</button>
+                <button onclick="exportCSV()">Export</button>
+            </div>
+            <table id="contact-table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Contacts will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
