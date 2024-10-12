@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,14 +5,13 @@ body {
     box-sizing: border-box;
 }
 
-/* Header and Navigation */
 header {
     background-color: #333;
     padding:  20px 0;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* ให้มันอยู่ด้านบนเสมอ */
+    z-index: 1000;
 }
 
 .nav-menu {
@@ -34,12 +32,10 @@ header {
     font-size: 18px;
 }
 
-/* Add padding to the body to account for the fixed header */
 body {
-    padding-top: 60px; /* ปรับตามขนาดของ header */
+    padding-top: 60px;
 }
 
-/* Sections */
 .section {
     padding: 50px 0;
     text-align: center;
@@ -70,7 +66,6 @@ p {
     background-color: #218838;
 }
 
-/* About Section */
 .about-img {
     width: 100%;
     max-width: 500px;
@@ -78,7 +73,6 @@ p {
     margin-top: 20px;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -100,7 +94,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Add padding to the body to account for the fixed footer */
 body {
-    padding-bottom: 60px; /* ปรับตามขนาดของ footer */
+    padding-bottom: 60px;
 }
